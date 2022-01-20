@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patients",
+  "info": {
+    "singularName": "patient",
+    "pluralName": "patients",
+    "displayName": "Patient",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "MiddleName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string",
+      "required": true
+    },
+    "Birthday": {
+      "type": "date",
+      "required": true
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "required": true
+    },
+    "AddressLine1": {
+      "type": "text",
+      "required": true
+    },
+    "AddressLine2": {
+      "type": "text"
+    },
+    "City": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "string",
+      "required": true
+    },
+    "EmergencyContact": {
+      "type": "string",
+      "required": true
+    },
+    "Picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "EmergencyContactPhone": {
+      "type": "string"
+    },
+    "Postcode": {
+      "type": "string"
+    }
+  }
+}
